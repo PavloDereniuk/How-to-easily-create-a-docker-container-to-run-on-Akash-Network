@@ -1,0 +1,32 @@
+version: "2.0"
+services:
+  my-service:
+    image: kapitoshko/sample-project # replace with your Docker image name and tag
+    expose:
+      - port: 8080
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    my-service:
+      resources:
+        cpu:
+          units: 0.5 # adjust based on your needs
+        memory:
+          size: 1Gi # adjust based on your needs
+        storage:
+          size: 1Gi # adjust based on your needs
+  placement:
+    my-service:
+      attributes:
+        host: akash # specify the host where you want to deploy
+      pricing:
+        my-service:
+          denom: uakt
+          amount: 1000 # adjust based on your needs
+deployment:
+  my-service:
+    my-service:
+      profile: my-service
+      count: 1 # number of instances
