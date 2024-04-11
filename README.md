@@ -191,4 +191,6 @@ Now check [Docker Hub](https://hub.docker.com/) to see if your image has appeare
 
 ### Several hacks:
 
-1. If you want to explore the capabilities of the Akash Network but are not yet willing to deposit funds into your account, you can use the sandbox. This is a special environment where you can deploy your application using test tokens. More information about the sandbox can be found [here](https://akash.network/docs/deployments/sandbox/introduction/). The faucet for receiving test tokens is located [here](https://faucet.sandbox-01.aksh.pw/)
+1. If you want to explore the capabilities of the Akash Network but are not yet willing to deposit funds into your account, you can use the sandbox. This is a special environment where you can deploy your application using test tokens. More information about the sandbox can be found [here](https://akash.network/docs/deployments/sandbox/introduction/). The faucet for receiving test tokens is located [here](https://faucet.sandbox-01.aksh.pw/).
+2. If you're unfamiliar with using Docker and unsure how to properly create a Dockerfile, you can leverage artificial intelligence tools like ChatGPT, Blackboxа or Copilot. In most cases, though not always on the first attempt, they can help you compose a functional Dockerfile.
+3. If you encounter errors when attempting to deploy the app, try closing the deployment first and running it on another provider. If this doesn't resolve the issue, you can always seek assistance from the official Discord channel of Akash Network, where you will definitely be helped.
